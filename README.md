@@ -1,4 +1,4 @@
-### Transfer OpenSSL cipher names to JSSE ciphernames
+### Transfer OpenSSL cipher names to JSSE cipher names
 
 This shell script takes Mozilla's SSL/TLS recommended cipher list and transfers those ciphers from their OpenSSL name into their JSSE names.
 It uses IANA's TLS Cipher Suite List, which is what the Java's JSSE cipher suite names correspond to.
@@ -16,8 +16,10 @@ Usage
 $ ./jlist.sh 
 ```
 
-Time Saver
+Time Saver 
 ----------
+
+This is all that you need. It's current as of April 2015, the publication date.
 
 ```java
 	public static final String[] SAFE_CIPHER_SUITES = new String[] {			
